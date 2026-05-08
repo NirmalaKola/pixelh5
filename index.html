@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelH5 Games</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="main-nav">
+
+  <!-- LOGO -->
+  <div class="nav-left">
+    <i class="fa-solid fa-gamepad"></i> Games.Pixelh5
+  </div>
+
+  <!-- MENU -->
+  <ul class="nav-center">
+
+    <li>
+      <a href="index.html" class="active">
+        <i class="fa-solid fa-house"></i> Home
+      </a>
+    </li>
+
+    <!-- CATEGORIES DROPDOWN -->
+    <li class="dropdown">
+      <a href="#"><i class="fa-solid fa-layer-group"></i> Categories ▾</a>
+      <ul class="dropdown-menu">
+        <li onclick="filterGames('All')">🎮 All</li>
+        <li onclick="filterGames('Action')">⚔️ Action</li>
+        <li onclick="filterGames('Puzzle')">🧩 Puzzle</li>
+        <li onclick="filterGames('Racing')">🏎️ Racing</li>
+        <li onclick="filterGames('Arcade')">🕹️ Arcade</li>
+        <li onclick="filterGames('Simulation')">🎯 Simulation</li>
+        <li onclick="filterGames('Board')">♟️ Board</li>
+        <li onclick="filterGames('Quiz')">❓ Quiz</li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="about.html">
+        <i class="fa-solid fa-circle-info"></i> About
+      </a>
+    </li>
+
+    <li>
+      <a href="contact.html">
+        <i class="fa-solid fa-envelope"></i> Contact
+      </a>
+    </li>
+
+    <li>
+      <a href="privacy.html">
+        <i class="fa-solid fa-shield-halved"></i> Privacy
+      </a>
+    </li>
+
+  </ul>
+
+  <!-- SEARCH -->
+  <div class="nav-right">
+    <input type="text" id="searchInput" placeholder="Search games...">
+  </div>
+
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <h1><i class="fa-solid fa-gamepad"></i> Play Free Online Games</h1>
+  <p>Explore action, puzzle, racing and more – all in one place.</p>
+</section>
+
+<!-- ===== GAMES ===== -->
+<main>
+  <div id="gamesContainer" class="games-grid"></div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <p>© 2026 PixelH5 Games. All rights reserved.</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

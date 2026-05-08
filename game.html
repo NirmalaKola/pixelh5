@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <title>Play Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="game-header">
+    <a href="index.html" class="back-btn">⬅ Back to Home</a>
+</div>
+
+<div class="game-wrapper" id="gameWrapper"></div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const gameSrc = params.get("src");
+
+    document.getElementById("gameWrapper").innerHTML = `
+        <iframe src="${gameSrc}" frameborder="0" allowfullscreen></iframe>
+    `;
+</script>
+
+</body>
+</html>
